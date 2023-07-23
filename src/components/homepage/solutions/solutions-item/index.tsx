@@ -9,7 +9,7 @@ const SolutionsItem = (props: ISolutionsItemProps) => {
   const { title, description } = props;
 
   return (
-    <div className="relative min-h-[210px]">
+    <div className="relative h-full min-h-[210px]">
       <div className="flex h-full flex-col overflow-hidden rounded-xl shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
         <div className="hidden bg-gradient-to-r from-[#E698FA] to-[#D68FC7] p-6 text-white lg:block">
           <h6 className="text-xl font-bold">{title}</h6>

@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import SolutionsItem from "./solutions-item";
 import SolutionsItemSecondary from "./solutions-item-secondary";
+import Aos from "aos";
 
 const SolutionsData = [
   {
@@ -31,22 +34,46 @@ const SolutionsData = [
 ];
 
 const Solutions = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <div className="mx-auto max-w-screen-xl">
-      <h3 className="mb-14 text-center text-6xl font-bold text-white lg:text-7xl">
+      <h3
+        className="mb-14 text-center text-6xl font-bold text-white lg:text-7xl"
+        data-aos="fade-up"
+      >
         Solutions
       </h3>
-      <div className="grid grid-cols-1 gap-8 px-3 md:grid-cols-2 lg:grid-cols-3 lg:px-12">
+      <div
+        id="solution-container"
+        className="grid grid-cols-1 gap-8 px-3 md:grid-cols-2 lg:grid-cols-3 lg:px-12"
+      >
         {SolutionsData.map((item, index) => {
           return (
-            <SolutionsItem
+            <div
               key={index}
-              title={item.title}
-              description={item.description}
-            />
+              className="h-full"
+              data-aos="zoom-in"
+              data-aos-delay={index * 200}
+              data-aos-anchor="#solution-container"
+            >
+              <SolutionsItem
+                title={item.title}
+                description={item.description}
+              />
+            </div>
           );
         })}
-        <SolutionsItemSecondary />
+        <div
+          className="h-full"
+          data-aos="zoom-in"
+          data-aos-delay={5 * 200}
+          data-aos-anchor="#solution-container"
+        >
+          <SolutionsItemSecondary />
+        </div>
       </div>
     </div>
   );
