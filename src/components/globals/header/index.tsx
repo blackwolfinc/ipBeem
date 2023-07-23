@@ -4,7 +4,6 @@ import React from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 import Image from "next/image";
 import Logo from "@/img/logo.png";
-import Link from "next/link";
 
 const Header = () => {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -15,7 +14,7 @@ const Header = () => {
         <div
           className={`grid w-full grid-cols-2 items-center px-4 py-4 lg:grid-cols-3 lg:p-10`}
         >
-          <Link href={"#"}>
+          <a href={"#"} onClick={() => setShowMenu(false)}>
             <Image
               src={Logo}
               alt="Logo"
@@ -23,7 +22,7 @@ const Header = () => {
               height={40}
               className="w-24 cursor-pointer lg:w-40"
             />
-          </Link>
+          </a>
           <div
             className={`itemce fixed left-0 top-0 z-[999] h-screen w-screen items-center bg-[#E09AC0] text-white lg:flex lg:h-full ${
               showMenu ? "" : "translate-x-full"
@@ -35,15 +34,21 @@ const Header = () => {
             >
               <MdClose size={36} />
             </button>
-            <div className="flex h-full w-full flex-col items-center justify-center gap-10 text-4xl backdrop-blur-sm lg:flex-row lg:text-lg xl:text-xl">
+            <div className="flex h-full w-full flex-col items-center justify-center gap-10 text-2xl backdrop-blur-sm lg:flex-row lg:text-lg xl:text-xl">
               <NavItem>
-                <Link href={"#about-us"}>About Us</Link>
+                <a href={"#about-us"} onClick={() => setShowMenu(false)}>
+                  About Us
+                </a>
               </NavItem>
               <NavItem>
-                <Link href={"#solutions"}>Solutions</Link>
+                <a href={"#solutions"} onClick={() => setShowMenu(false)}>
+                  Solutions
+                </a>
               </NavItem>
               <NavItem>
-                <Link href={"#privacy"}>Privacy</Link>
+                <a href={"#privacy"} onClick={() => setShowMenu(false)}>
+                  Privacy
+                </a>
               </NavItem>
             </div>
           </div>

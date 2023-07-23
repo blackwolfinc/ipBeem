@@ -10,10 +10,10 @@ export const Body = () => {
       <div>
         <Hero />
       </div>
-      <div id="solutions" className="mb-40 pt-10">
+      <div id="solutions" className="mb-28 pt-10">
         <Solutions />
       </div>
-      <div className="mx-auto mb-40 max-w-screen-xl">
+      <div id="about-us" className="mx-auto mb-40 max-w-screen-xl pt-10">
         <div className="flex flex-col gap-4 lg:flex-row">
           <div className="mb-10 px-4 lg:mb-0 lg:w-1/2">
             <AboutUs />
