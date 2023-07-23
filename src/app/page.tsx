@@ -1,3 +1,4 @@
+import Footer from "@/components/globals/footer";
 import Header from "@/components/globals/header";
 import { Body } from "@/components/homepage/Body";
 
@@ -9,6 +10,8 @@ export default function Home() {
       <main>
         <Body />
       </main>
+
+      <Footer />
     </div>
   );
 }
