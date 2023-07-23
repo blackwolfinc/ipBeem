@@ -53,7 +53,7 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden items-center justify-end lg:flex">
-            <button className="rounded-lg bg-gradient-to-bl from-[#F5F5F7]/0 to-[#F5F5F7]/30 px-5 py-3 uppercase text-white">
+            <button className="rounded-lg bg-gradient-to-bl from-[#F5F5F7]/0 to-[#F5F5F7]/30 px-5 py-3 uppercase text-white transition-all duration-150 hover:bg-[#F5F5F7]/30">
               <span>Start Free Trial</span>
             </button>
           </div>
@@ -76,7 +76,11 @@ type NavItemTypes = {
 const NavItem = (data: NavItemTypes) => {
   const { children } = data;
 
-  return <div className="relative py-1">{children}</div>;
+  return (
+    <div className="relative py-1 text-white transition-all duration-150 hover:text-black">
+      {children}
+    </div>
+  );
 };
 
 export default Header;
