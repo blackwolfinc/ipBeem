@@ -1,17 +1,14 @@
-import { Body } from '@/components/Body'
-import { Header } from '@/components/Header'
+import Header from "@/components/globals/header";
+import { Body } from "@/components/homepage/Body";
 
 export default function Home() {
   return (
-    <main className="background w-full flex justify-center relative">
-      {/* background */}
-      <div className='image_background_home absolute w-full h-[2600px] bg-slate-400  mx-auto top-0'> </div>
+    <div className="min-w-screen font-inter min-h-screen overflow-x-hidden bg-[#E09AC0]">
+      <Header />
 
-      
-      <header className='absolute w-full'>
-        <Header />
-      </header>
-      <Body />
-    </main>
-  )
+      <main>
+        <Body />
+      </main>
+    </div>
+  );
 }
