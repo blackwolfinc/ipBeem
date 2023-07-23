@@ -52,12 +52,15 @@ const Hero = () => {
               data-aos-delay="300"
               className="order-5 w-full px-4 md:w-fit lg:order-none"
             >
-              <button className="mb-10 flex w-full items-center justify-center gap-2 rounded-lg bg-black px-10 py-5 text-sm uppercase text-white transition-all duration-300 hover:scale-105 sm:px-24">
+              <a
+                href="#solutions"
+                className="mb-10 flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-black px-10 py-5 text-sm uppercase text-white transition-all duration-300 hover:scale-105 sm:px-24"
+              >
                 <span>See Out Solutions</span>
                 <div className="rounded-full bg-white text-black">
                   <BiChevronRight />
                 </div>
-              </button>
+              </a>
             </div>
             <div
               className="order-6 grid grid-cols-2 gap-2 px-4 text-xs uppercase text-white lg:order-none lg:px-0 lg:text-base"
