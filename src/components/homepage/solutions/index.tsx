@@ -36,7 +36,7 @@ const Solutions = () => {
       <h3 className="mb-14 text-center text-6xl font-bold text-white lg:text-7xl">
         Solutions
       </h3>
-      <div className="grid grid-cols-1 gap-8 px-3 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 px-3 md:grid-cols-2 lg:grid-cols-3 lg:px-12">
         {SolutionsData.map((item, index) => {
           return (
             <SolutionsItem

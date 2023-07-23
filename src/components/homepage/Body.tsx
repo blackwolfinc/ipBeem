@@ -15,7 +15,7 @@ export const Body = () => {
       </div>
       <div id="about-us" className="mx-auto mb-40 max-w-screen-xl pt-10">
         <div className="flex flex-col gap-4 lg:flex-row">
-          <div className="mb-10 px-4 lg:mb-0 lg:w-1/2">
+          <div className="mb-10 px-4 lg:mb-0 lg:w-1/2 lg:pl-12">
             <AboutUs />
           </div>
           <div className="relative w-full lg:w-1/2">

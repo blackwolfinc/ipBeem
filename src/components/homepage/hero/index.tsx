@@ -22,14 +22,13 @@ const Hero = () => {
         <div className="relative z-0">
           <div className="mx-auto flex max-w-[660px] flex-col items-center justify-center pt-10 lg:pt-0">
             <div
-              className="relative z-0 order-3 mb-10 overflow-hidden rounded-lg px-8 py-3 lg:order-none lg:mb-4"
+              className="relative z-0 order-3 mx-4 mb-10 overflow-hidden rounded-lg bg-white/40 px-8 py-3 lg:order-none lg:mb-4"
               data-aos="zoom-in"
             >
-              <div className="absolute left-0 top-0 -z-10 h-full w-full bg-white/40 backdrop-blur-sm"></div>
-              <span className="flex items-center gap-2 text-sm uppercase text-white">
+              <div className="flex items-center gap-2 text-sm uppercase text-white">
                 <IoStar />
-                Rated #1 on Proxy Nation
-              </span>
+                <span>Rated #1 on Proxy Nation</span>
+              </div>
             </div>
             <h1
               className="order-1 mb-8 text-center text-4xl font-bold text-white lg:order-none lg:text-7xl"
@@ -41,7 +40,7 @@ const Hero = () => {
               by humans.
             </h1>
             <p
-              className="order-4 mb-14 px-12 text-center font-semibold text-white lg:order-none lg:mb-12 lg:px-0 lg:text-xl"
+              className="order-4 mb-14 px-4 text-center font-semibold text-white md:px-12 lg:order-none lg:mb-12 lg:px-0 lg:text-xl"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
@@ -51,9 +50,9 @@ const Hero = () => {
             <div
               data-aos="zoom-in"
               data-aos-delay="300"
-              className="order-5 px-4 lg:order-none"
+              className="order-5 w-full px-4 md:w-fit lg:order-none"
             >
-              <button className="mb-10 flex items-center gap-2 rounded-lg bg-black px-10 py-5 text-sm uppercase text-white transition-all duration-300 hover:scale-105 sm:px-24">
+              <button className="mb-10 flex w-full items-center justify-center gap-2 rounded-lg bg-black px-10 py-5 text-sm uppercase text-white transition-all duration-300 hover:scale-105 sm:px-24">
                 <span>See Out Solutions</span>
                 <div className="rounded-full bg-white text-black">
                   <BiChevronRight />
@@ -75,7 +74,7 @@ const Hero = () => {
               </div>
             </div>
             <div
-              className="static left-10 top-10 -z-10 order-2 mb-10 aspect-square w-60 lg:absolute lg:mb-0"
+              className="static left-10 top-10 -z-10 order-2 mb-10 aspect-square w-52 lg:absolute lg:mb-0 lg:w-60"
               data-aos="fade-right"
             >
               <div className="h-full w-full overflow-hidden rounded-full">
