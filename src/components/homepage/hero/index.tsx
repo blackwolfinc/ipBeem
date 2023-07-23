@@ -51,9 +51,9 @@ const Hero = () => {
             <div
               data-aos="zoom-in"
               data-aos-delay="300"
-              className="order-5 lg:order-none"
+              className="order-5 px-4 lg:order-none"
             >
-              <button className="mb-10 flex items-center gap-2 rounded-lg bg-black px-24 py-5 text-sm uppercase text-white transition-all duration-300 hover:scale-105">
+              <button className="mb-10 flex items-center gap-2 rounded-lg bg-black px-10 py-5 text-sm uppercase text-white transition-all duration-300 hover:scale-105 sm:px-24">
                 <span>See Out Solutions</span>
                 <div className="rounded-full bg-white text-black">
                   <BiChevronRight />
