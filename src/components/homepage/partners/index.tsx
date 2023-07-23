@@ -2,34 +2,37 @@ import Image from "next/image";
 import React from "react";
 
 // images
-import Microsoft from "@/img/microsoft.png";
-import Amazon from "@/img/amazon.webp";
-import Google from "@/img/google.png";
+import Windstream from "@/img/partners/windstream.png";
+import Comcast from "@/img/partners/comcast.png";
+import Verizon from "@/img/partners/verizon.png";
+import Rcn from "@/img/partners/rcn.png";
+import Att from "@/img/partners/att.png";
+import Telekom from "@/img/partners/telekom.png";
 
 const PartnersData = [
   {
-    name: "Microsoft",
-    logo: Microsoft,
+    name: "Windstream",
+    logo: Windstream,
   },
   {
-    name: "Amazon",
-    logo: Amazon,
+    name: "Comcast",
+    logo: Comcast,
   },
   {
-    name: "Google",
-    logo: Google,
+    name: "Verizon",
+    logo: Verizon,
   },
   {
-    name: "Microsoft",
-    logo: Microsoft,
+    name: "RCN",
+    logo: Rcn,
   },
   {
-    name: "Amazon",
-    logo: Amazon,
+    name: "AT&T",
+    logo: Att,
   },
   {
-    name: "Google",
-    logo: Google,
+    name: "Telekom",
+    logo: Telekom,
   },
 ];
 
@@ -49,13 +52,13 @@ const Partners = () => {
             data-aos-delay={index * 200}
             data-aos-anchor=".partners-aos"
           >
-            <div className="flex h-full w-full items-center justify-center rounded-lg bg-white p-4 opacity-70 transition-all duration-300 hover:opacity-100 lg:px-10 lg:py-6 ">
+            <div className="flex h-16 w-full items-center justify-center rounded-lg bg-white p-4 opacity-70 transition-all duration-300 hover:opacity-100 lg:h-28 lg:px-10 lg:py-6 ">
               <Image
                 src={item.logo}
                 alt={item.name}
                 width={200}
                 height={200}
-                className="min-h-full min-w-full object-contain object-center"
+                className="h-full min-w-full object-contain"
               />
             </div>
           </div>
