@@ -41,7 +41,7 @@ const Solutions = () => {
   return (
     <div className="mx-auto max-w-screen-xl">
       <h3
-        className="mb-14 text-center text-6xl font-bold text-white lg:text-7xl"
+        className="mb-14 text-center text-4xl font-bold text-white lg:text-7xl"
         data-aos="fade-up"
       >
         Solutions

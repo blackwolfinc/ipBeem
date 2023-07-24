@@ -58,7 +58,7 @@ const Partners = () => {
                 alt={item.name}
                 width={200}
                 height={200}
-                className="h-full min-w-full object-contain"
+                className="h-full w-auto min-w-full object-contain"
               />
             </div>
           </div>
