@@ -7,7 +7,7 @@ import Partners from "./partners";
 export const Body = () => {
   return (
     <div>
-      <div className="relative z-0">
+      <div className="relative z-0 mb-40">
         <Hero />
         {/* background image */}
         <div className="absolute right-0 top-0 -z-10">
