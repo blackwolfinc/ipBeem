@@ -10,7 +10,7 @@ export const Body = () => {
       <div className="relative z-0">
         <Hero />
         {/* background image */}
-        <div className="absolute right-0 top-0">
+        <div className="absolute right-0 top-0 -z-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="546"
@@ -25,7 +25,7 @@ export const Body = () => {
             />
           </svg>
         </div>
-        <div className="absolute left-0 top-0 translate-y-1/2 lg:bottom-0 lg:top-auto lg:translate-y-0">
+        <div className="absolute left-0 top-0 -z-10 translate-y-1/2 lg:bottom-0 lg:top-auto lg:translate-y-0">
           {/* mobile */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export const Body = () => {
             height="670"
             viewBox="0 0 749 670"
             fill="none"
-            className="hidden lg:block"
+            className="-z-10 hidden lg:block"
           >
             <path
               d="M748.205 139.5C748.205 432.487 510.692 670 217.705 670C-75.2819 670 -312.795 432.487 -312.795 139.5C-312.795 -153.487 -346.782 108 -53.7948 108C239.192 108 748.205 -153.487 748.205 139.5Z"

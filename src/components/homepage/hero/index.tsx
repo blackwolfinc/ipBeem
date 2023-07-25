@@ -19,10 +19,10 @@ const Hero = () => {
   return (
     <div className="mx-auto max-w-screen-xl">
       <div className="flex max-h-screen min-h-screen w-full flex-col justify-center lg:aspect-[4/3] lg:min-h-0">
-        <div className="relative z-0">
+        <div className="relative z-0 lg:mt-20">
           <div className="mx-auto flex max-w-[660px] flex-col items-center justify-center pt-10 lg:pt-0">
             <div
-              className="relative z-0 order-3 mx-4 mb-10 overflow-hidden rounded-lg bg-white/40 px-8 py-3 lg:order-none lg:mb-4"
+              className="relative z-0 order-3 mx-4 mb-10 overflow-hidden rounded-lg bg-white/40 px-8 py-3 lg:order-none"
               data-aos="zoom-in"
             >
               <div className="flex items-center gap-2 text-sm uppercase text-white">
@@ -31,16 +31,14 @@ const Hero = () => {
               </div>
             </div>
             <h1
-              className="order-1 mb-8 text-center text-4xl font-bold text-white lg:order-none lg:text-7xl"
+              className="order-1 mb-10 px-6 text-center text-3xl font-bold text-white md:text-7xl lg:order-none"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              Proxies delivered
-              <br />
-              by humans.
+              Proxies delivered by humans.
             </h1>
             <p
-              className="order-4 mb-14 px-4 text-center font-semibold text-white md:px-12 lg:order-none lg:mb-12 lg:px-0 lg:text-xl"
+              className="order-4 mb-10 px-8 text-center font-semibold text-white md:px-12 md:text-xl lg:order-none lg:mb-12 lg:px-0"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
@@ -67,17 +65,17 @@ const Hero = () => {
               data-aos="zoom-in"
               data-aos-delay="400"
             >
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-2">
                 <FaCheck />
                 <span>100% Residential</span>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-2">
                 <FaCheck />
                 <span>Supports Sneakers</span>
               </div>
             </div>
             <div
-              className="static left-10 top-10 -z-10 order-2 mb-10 aspect-square w-52 lg:absolute lg:mb-0 lg:w-60"
+              className="static left-10 top-10 -z-10 order-2 mb-10 aspect-square w-52 md:w-96 lg:absolute lg:mb-0 lg:w-60"
               data-aos="fade-right"
             >
               <div className="h-full w-full overflow-hidden rounded-full">
