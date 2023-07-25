@@ -68,7 +68,7 @@ export const Body = () => {
             <AboutUs />
           </div>
           <div className="relative w-full lg:w-1/2">
-            <div className="-right-[20%] top-0 flex h-full items-center px-4 lg:absolute lg:px-0">
+            <div className="-right-[40%] top-0 flex h-full items-center px-4 lg:absolute lg:px-0">
               <Partners />
             </div>
           </div>
